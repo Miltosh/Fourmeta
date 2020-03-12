@@ -1,0 +1,31 @@
+.navigation-items {
+    display: flex;
+}
+
+.navigation-items ul {
+    padding: 0rem 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-items li {
+    list-style: none;
+}
+
+.navigation-items .button {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.navigation-items .button:hover {
+    color: rgb(43, 200, 240);
+    background-color: rgba(35, 32, 32, 1);
+}

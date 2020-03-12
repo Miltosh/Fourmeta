@@ -1,0 +1,79 @@
+.spacex_CargoDetail {
+    border: 1px solid rgba(43, 201, 240, 0.37);
+    box-shadow: 0 0px 25px -10px rgb(43, 200, 240);
+    margin: 2rem;
+    width: 80%;
+    padding: 2rem;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+.spacex_CargoDetail_Card {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.spacex_CargoDetail_Card div.content h2 {
+    text-align: center;
+}
+
+.spacex_CargoDetail_Card div.content h3 {
+    color: rgb(43, 200, 240);
+    padding: 10px;
+    margin: 0;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.spacex_CargoDetail_Card div.header {
+    overflow-wrap: break-word;
+    flex-direction: column;
+}
+
+.spacex_CargoDetail_Card div.header h1 {
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.spacex_CargoDetail_Card div.header p {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.spacex_CargoDetail_Card div.header span {
+    display: block;
+    width: 100%;
+    border-bottom: solid rgb(43, 200, 240) 1px;
+}
+
+.spacex_CargoDetail form {
+    display: flex;
+    justify-content: center;
+}
+
+.spacex_CargoDetail form input {
+    flex: 1;
+    align-self: center;
+    max-width: 400px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 779px) {
+    .spacex_CargoDetail form {
+        flex-direction: column;
+    }
+    .spacex_CargoDetail form input {
+        width: 100%;
+        max-width: 500px;
+        align-self: center;
+        margin: 10px;
+    }
+    .spacex_CargoDetail {
+        margin-top: 3rem;
+    }
+}

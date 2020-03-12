@@ -1,0 +1,65 @@
+.spacex__CargoList {
+    display: flex;
+    justify-self: flex-start;
+    height: 80vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    min-width: 300px;
+}
+
+.spacex__CargoList ul {
+    margin: 0;
+    width: 80%;
+    padding: 2rem;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.spacex__CargoList ul li {
+    display: flex;
+    background-color: #1d2225;
+    margin: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.spacex__CargoList ul li:hover {
+    background-color: #323b41;
+    color: white;
+    transform: scale(1.2);
+}
+
+.spacex__CargoList a{
+    font-size: 18px;
+    padding: 15px;
+    color: inherit;
+    width: 100%;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 779px) {
+    .spacex__CargoList {
+        justify-content: center;
+        height: 30vh;
+        min-width: 250px;
+    }
+}
+
+.spacex__CargoList::-webkit-scrollbar {
+    width: 8px;
+}
+
+.spacex__CargoList::-webkit-scrollbar-track {
+    box-shadow: inset 1px 0 5px grey;
+    border-radius: 10px;
+}
+
+.spacex__CargoList::-webkit-scrollbar-thumb {
+    background: rgb(43, 200, 240);
+    border-radius: 10px;
+}
+
+.spacex__CargoList::-webkit-scrollbar-thumb:hover {
+    background: rgb(24, 161, 196);
+}

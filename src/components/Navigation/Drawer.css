@@ -1,0 +1,49 @@
+.drawer {
+  position: fixed;
+  flex-direction: column;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  min-width: 200px;
+  background-color: rgb(31, 28, 28);
+  align-items: center;
+  z-index: 5;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.42);
+  padding: "10px 0";
+  transform: translateX(120%);
+  transition: all 0.3s ease-out;
+}
+
+.drawer.open {
+  transform: translateX(0);
+}
+
+.drawer::selection {
+  background-color: transparent;
+  color: #000;
+}
+
+.drawer .navigation-mobile {
+  align-self: flex-start;
+  margin: 5px;
+}
+
+.drawer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.drawer li {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 779px) {
+  .drawer {
+    display: none;
+  }
+}

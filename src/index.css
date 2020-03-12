@@ -1,0 +1,87 @@
+html {
+    font-family: Roboto, 'Courier New', Courier, monospace;
+    height: 100%;
+    background-color: #181c1f;
+    color: #b3c3cc;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%
+}
+
+button.primary {
+    align-self: center;
+    margin: 10px;
+    background-color: #323b41;
+    border: 1px solid rgb(43, 200, 240);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 700;
+    width: 150px;
+    transition: background-color 250ms ease-in-out, 
+                transform 150ms ease;
+}
+
+button.primary:hover {
+    background-color: #1c2124;
+}
+
+button.primary:disabled {
+    background-color: transparent;
+    border-color: rgb(218, 156, 41);
+    cursor: not-allowed;
+}
+button.primary:focus {
+    outline: none;
+}
+button.primary:active {
+    transform: scale(0.95);
+}
+
+button.accept {
+    border: 1px solid rgb(94, 172, 21);
+    background-color: rgb(30, 128, 30);
+}
+
+button.accept:hover {
+    background-color: rgb(41, 151, 41);
+}
+
+input {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid rgb(43, 200, 240);
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 8px;
+    background: transparent;
+    transition: border-image 0.2s;
+}
+
+input.error {
+    border-image: linear-gradient(to right, rgb(236, 67, 16), rgb(202, 163, 54), rgb(236, 97, 16));
+    border-image-slice: 1;
+}
+
+html::-webkit-scrollbar {
+    width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    box-shadow: inset 1px 0 5px grey;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(43, 200, 240);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: rgb(24, 161, 196);
+}

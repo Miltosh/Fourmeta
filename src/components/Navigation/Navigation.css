@@ -1,0 +1,95 @@
+.navigation {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 20px -12px rgba(0, 0, 0, 0.47);
+  position: fixed;
+  display: flex;
+  width: 100%;
+  min-width: 270px;
+  top: 0;
+  left: 0;
+  margin-bottom: 20px;
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.navigation a {
+  cursor: pointer;
+  user-select: none;
+  margin: 0;
+  transition: color 200ms ease-in;
+  color: white;
+}
+
+.navigation a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation a:hover {
+  color: rgb(43, 200, 240);
+}
+
+.navigation .brand {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem;
+  margin-left: 20px;
+}
+
+.navigation .drawer {
+  display: none;
+}
+
+.navigation button {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.spacex_input {
+  min-width: 230px;
+  flex: 2;
+  margin: 0px 50px;
+  align-self: center;
+  justify-self: flex-start;
+}
+
+.spacer {
+  flex: 1;
+}
+
+@media screen and (max-width: 779px) {
+  .navigation .navigation-items {
+    display: none;
+  }
+  .drawer {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .navigation {
+    flex-wrap: wrap;
+  }
+  .spacex_input {
+    order: 1;
+    margin-bottom: 10px;
+  }
+}
